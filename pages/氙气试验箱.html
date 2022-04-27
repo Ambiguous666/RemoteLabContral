@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>氙气试验箱</title>
+    <link rel="stylesheet" href="高低温箱702P.css">
+</head>
+<body>
+    <h2 style="margin:0 auto;text-align: center;">氙气试验箱</h2>
+    <hr/>
+    <br/>
+    <div class="rg_layout">
+        <div class="rg_left">
+            <input type="button" name="return" value="返回" id="back" onclick="location.href='主页.html'">
+        </div>
+        <div class="rg_center">
+            <div class="rg_form">
+                <form>
+                    <table>
+                        <tr>
+                            <td class="td_left"><label for="temperature">温度</label> </td>
+                            <td class="td_right"><input type="text" name="temperature" id="temperature" readonly> </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left"><label for="humidity">湿度</label> </td>
+                            <td class="td_right"><input type="text" name="humidity" id="humidity" readonly> </td>
+                        </tr>
+                        <tr><!--label 标签的作用是当点击文字也会跳到文本输出框-->
+                            <td class="td_left"><label for="airPressure">气压</label> </td>
+                            <td class="td_right"><input type="text" name="airPressure" id="airPressure" readonly> </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left"><label for="radiance">辐射度</label> </td>
+                            <td class="td_right"><input type="text" name="radiance" id="radiance" readonly> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="button" value="停止设备运行" id="stopRun">
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

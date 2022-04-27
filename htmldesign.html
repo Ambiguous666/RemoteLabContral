@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>前端页面</title>
+    <!--    引入格式文件-->
+    <link rel="stylesheet" href="htmldesign.css">
+</head>
+<body>
+    <div class="rg_layout">
+        <div class="rg_left">
+            <p>设备状况信息</p>
+            <p>Device Information</p>
+        </div>
+        <div class="rg_center">
+            <div class="rg_form">
+<!--                <form action="#" method="post">-->
+                <form>
+                    <table>
+                        <tr><!--label 标签的作用是当点击文字也会跳到文本输出框-->
+                            <!--for属性与ID属性对应规定 label 绑定到哪个表单元素。-->
+                            <td class="td_left"><label for="temperature">当前温度</label> </td>
+                            <td class="td_right"><input type="text" name="temperature" id="temperature" readonly> </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left"><label for="humidity">当前湿度</label> </td>
+                            <td class="td_right"><input type="text" name="humidity" id="humidity" readonly> </td>
+                        </tr>
+                        <tr><!--label 标签的作用是当点击文字也会跳到文本输出框-->
+                            <td class="td_left"><label for="saturation_temperature">当前饱和温度</label> </td>
+                            <td class="td_right"><input type="text" name="saturation_temperature" id="saturation_temperature" readonly> </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left"><label for="set_temperature">设定的温度</label> </td>
+                            <td class="td_right"><input type="text" name="set_temperature" id="set_temperature"> </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left"><label for="set_humidity">设定的湿度</label> </td>
+                            <td class="td_right"><input type="text" name="set_humidity" id="set_humidity"> </td>
+                        </tr>
+<!--                        <tr>-->
+<!--                            <td class="td_left">性别</td>-->
+<!--                            <td class="td_right">-->
+<!--                                <input type="radio" name="gender" value="male">男-->
+<!--                                <input type="radio" name="gender" value="female">女-->
+<!--                            </td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td class="td_left"><label for="birthday">出生日期</label> </td>-->
+<!--                            <td class="td_right"><input type="date" name="birthday" id="birthday"> </td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td class="td_left"><label for="checkcode">验证码</label> </td>-->
+<!--                            <td class="td_right">-->
+<!--                                <input type="text" name="username" id="checkcode">-->
+<!--                                <img src="image/verify_code.jpg" id="img_check">-->
+<!--                            </td>-->
+<!--                        </tr>-->
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="修改设定" id="modify_settings_btn">
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="rg_right">
+            <p>当前设备信息</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="sockettest.js"></script>
+</body>
+</html>

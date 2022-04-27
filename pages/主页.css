@@ -1,0 +1,62 @@
+@media (min-width: 0px) and (max-width: 768px) {
+    .td_left {
+        width: 130px;
+        text-align: center;
+        height: 35px;
+
+    }
+
+    .td_right {
+        width: 130px;
+        text-align: center;
+        height: 35px;
+    }
+
+    #btn_702P, #btn_705P, #btn_710P_1, #btn_710P_2, #btn_WalkInBox, #btn_saltSpray, #btn_XenonBox, #btn_lowPressureBox {
+        width: 110px;
+        height: 30px;
+    }
+
+    .center_layout {
+        width: 280px;
+        height: 400px;
+        position: absolute;
+        left: 20%;
+    }
+
+    .main_page_h2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .td_left {
+        width: 250px;
+        text-align: center;
+        height: 45px;
+    }
+
+    .td_right {
+        width: 250px;
+        text-align: center;
+        height: 45px;
+    }
+
+    #btn_702P, #btn_705P, #btn_710P_1, #btn_710P_2, #btn_WalkInBox, #btn_saltSpray, #btn_XenonBox, #btn_lowPressureBox {
+        width: 200px;
+        height: 32px;
+    }
+
+    .center_layout {
+        width: 600px;
+        height: 500px;
+        position: absolute;
+        left: 30%;
+    }
+
+    .main_page_h2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
